@@ -1,5 +1,6 @@
 import { View, Text } from "react-native"
 
+import { Steps } from "@/components/steps"
 import {Welcome} from "@/components/welcome"
 
 export default function Index() {
@@ -7,14 +8,12 @@ export default function Index() {
     <View
       style={{
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
+        padding: 40,
+        gap: 40
       }}
     >
       <Welcome />
-      <Text style={{ fontSize: 22 }}>
-        Inhaí galera
-      </Text>
+      <Steps/>
     </View>
   )
 }
