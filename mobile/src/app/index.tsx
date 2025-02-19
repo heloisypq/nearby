@@ -1,11 +1,12 @@
 import { View } from "react-native"
-import { router } from "expo-router"
+import { useRouter } from "expo-router"
 
 import { Steps } from "@/components/steps"
 import {Button} from "@/components/button"
 import {Welcome} from "@/components/welcome"
 
 export default function Index() {
+  const router = useRouter();
   return (
     <View
       style={{
