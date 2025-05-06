@@ -13,6 +13,7 @@ export const s = StyleSheet.create({
     flexDirection: "row",
     paddingHorizontal: 12,
     gap: 10,
+    flexWrap: 'wrap',
   },
   name: {
     fontSize: 14,

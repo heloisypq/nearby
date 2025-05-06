@@ -4,6 +4,7 @@ import { View, Alert, Text } from "react-native";
 import { api } from "@/services/api"
 
 import { Categories, CategoriesProps } from "@/components/categories";
+import { Testandos } from "@/components/testandos";
 
 export default function Home() {
   const [categories, setCategories] = useState<CategoriesProps>([]);
@@ -28,8 +29,12 @@ export default function Home() {
 
   return (
   <View style={{ flex:1, alignItems: "center", justifyContent: "center" }}>
-      { <Categories data={categories} /> }
-      <Text>Tentando</Text>
+      <Categories
+        data={categories}
+        onSelect={setCategory}
+        selected={category}
+      />
+      <Testandos/>
     </View>
   )
 }
